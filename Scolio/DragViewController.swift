@@ -35,6 +35,13 @@ class DragView: UIView {
     @IBOutlet var bottomLeft: DragNodeView!
     @IBOutlet var bottomRight: DragNodeView!
     
+    var topPair: (DragNodeView!, DragNodeView!) {// ¯\_(ツ)_/¯
+        return (topLeft.frame.origin.x <= topRight.frame.origin.x) ? (topLeft, topRight) : (topRight, topLeft)
+    }
+    
+    
+    
+    
     required init(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
     }
@@ -42,21 +49,6 @@ class DragView: UIView {
     
     
     override func drawRect(rect: CGRect) {
-//        CGContextRef context = UIGraphicsGetCurrentContext();
-//        CGContextSaveGState(context);
-//        
-//        CGContextTranslateCTM(context, 0.0, rect.size.height);
-//        CGContextScaleCTM(context, 1.0, -1.0);
-//        
-//        CGContextSetShouldAntialias(context, YES);
-//        CGContextSetLineWidth(context, 1.0f);
-//        CGContextSetRGBStrokeColor(context, 0.7, 0.7, 0.7, 1.0);
-//        
-//        CGContextMoveToPoint(context, rect.size.width/2, rect.size.height/2);
-//        CGContextAddLineToPoint(context, self.touchedPoint.x, self.touchedPoint.y);
-//        CGContextDrawPath(context, kCGPathStroke); 
-//        
-//        CGContextRestoreGState(context);
 
         let context = UIGraphicsGetCurrentContext()
         CGContextSaveGState(context)
@@ -71,6 +63,7 @@ class DragView: UIView {
         CGContextAddLineToPoint(context, self.topRight.center.x, self.frame.height-self.topRight.center.y)
         CGContextDrawPath(context, kCGPathStroke)
         
+        println("Angle: \(DragNodeView.angle(self.topLeft, self.topRight))")
         CGContextMoveToPoint(context, self.bottomLeft.center.x, self.frame.height-self.bottomLeft.center.y)
         CGContextAddLineToPoint(context, self.bottomRight.center.x, self.frame.height-self.bottomRight.center.y)
         CGContextDrawPath(context, kCGPathStroke)
@@ -83,14 +76,18 @@ class DragView: UIView {
 
 class DragNodeView: UIView {
     
-    
+    class func angle(a: DragNodeView, _ b: DragNodeView) -> CGFloat{
+        let dx = b.frame.origin.x - a.frame.origin.x
+        let dy = a.frame.origin.y - b.frame.origin.y
+        let ang = atan((dy/dx)) * CGFloat(180.0/3.14)
+        return ang
+    }
     
     func realCenter() -> CGPoint {
         let standardAnchor = CGPoint(x: 0.5, y: 0.5)
         let anchor = self.layer.anchorPoint
         
         let diff = CGPoint(x: standardAnchor.x-anchor.x, y: standardAnchor.y-anchor.y)
-        
         return diff
     }
     
