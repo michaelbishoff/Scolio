@@ -239,7 +239,7 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5NO-Wm-7Td" customClass="DragNodeView" customModule="Scolio" customModuleProvider="target">
-                                <rect key="frame" x="550" y="517" width="50" height="50"/>
+                                <rect key="frame" x="550" y="471" width="50" height="50"/>
                                 <color key="backgroundColor" red="0.26666668059999998" green="0.29803922770000002" blue="0.34901961679999999" alpha="1" colorSpace="deviceRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="50" id="ueu-sU-lLK"/>
@@ -262,8 +262,8 @@
                                     <constraint firstAttribute="width" constant="50" id="vSU-BE-YJe"/>
                                 </constraints>
                             </view>
-                            <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MEj-zz-qJN" customClass="DragNodeView" customModule="Scolio" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="517" width="50" height="50"/>
+                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MEj-zz-qJN" customClass="DragNodeView" customModule="Scolio" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="471" width="50" height="50"/>
                                 <color key="backgroundColor" red="0.26666668059999998" green="0.29803922770000002" blue="0.34901961679999999" alpha="1" colorSpace="deviceRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="QiT-nS-mY6"/>
@@ -274,10 +274,17 @@
                         <constraints>
                             <constraint firstItem="Qgh-XS-JFZ" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="72" id="FDK-jG-SR9"/>
                             <constraint firstItem="9Vz-Ce-xAi" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="72" id="Huw-YK-0wm"/>
+                            <constraint firstItem="MEj-zz-qJN" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="451" id="MKP-jI-XP2"/>
+                            <constraint firstItem="5NO-Wm-7Td" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="451" id="nGd-b5-DRg"/>
                             <constraint firstAttribute="trailingMargin" secondItem="Qgh-XS-JFZ" secondAttribute="trailing" constant="-16" id="omv-8j-HmJ"/>
                             <constraint firstAttribute="trailingMargin" secondItem="5NO-Wm-7Td" secondAttribute="trailing" constant="-16" id="yKz-c2-26J"/>
                             <constraint firstItem="5NO-Wm-7Td" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="497" id="yi5-eR-Cpy"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="yi5-eR-Cpy"/>
+                            </mask>
+                        </variation>
                         <connections>
                             <outlet property="bottomLeft" destination="MEj-zz-qJN" id="8OG-wS-nBM"/>
                             <outlet property="bottomRight" destination="5NO-Wm-7Td" id="DQb-3w-Tid"/>
