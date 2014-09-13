@@ -4,6 +4,11 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>Pods-M13Checkbox.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-UIView+draggable.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -17,12 +22,17 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>16B28F6A6CA4422B93325D05</key>
+		<key>3FACFA32D5304BB29CB9A060</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>1D47092238454C63B0CDDF97</key>
+		<key>49DDC4663249419D8BC1822A</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>85A4016951114AC6BBED0914</key>
 		<dict>
 			<key>primary</key>
 			<true/>

@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "16B28F6A6CA4422B93325D05"
+               BlueprintIdentifier = "49DDC4663249419D8BC1822A"
                BuildableName = "libPods-UIView+draggable.a"
                BlueprintName = "Pods-UIView+draggable"
                ReferencedContainer = "container:Pods.xcodeproj">

@@ -1,10 +1,13 @@
 PODS:
+  - M13Checkbox (1.1.2)
   - UIView+draggable (0.2)
 
 DEPENDENCIES:
+  - M13Checkbox
   - UIView+draggable
 
 SPEC CHECKSUMS:
+  M13Checkbox: e87ebe28627368b1c6d2233282d711a3854dfe3f
   UIView+draggable: ad1c3a0f862aca1923c45c3e05d68c7852014436
 
 COCOAPODS: 0.33.1

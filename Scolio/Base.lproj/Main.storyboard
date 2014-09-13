@@ -1,10 +1,43 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6245" systemVersion="14A343f" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="3iN-MQ-bqj">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6245" systemVersion="14A343f" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="svX-lb-r6r">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
+        <!--Questions View Controller-->
+        <scene sceneID="17p-TQ-qOa">
+            <objects>
+                <viewController id="svX-lb-r6r" customClass="QuestionsViewController" customModule="Scolio" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="mW3-MZ-yaU"/>
+                        <viewControllerLayoutGuide type="bottom" id="fL7-Pq-jfg"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="5sS-8M-bgh">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="1B7-cm-QdS">
+                                <rect key="frame" x="0.0" y="71" width="600" height="457"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="1B7-cm-QdS" firstAttribute="top" secondItem="mW3-MZ-yaU" secondAttribute="bottom" constant="51" id="Chq-uh-hbr"/>
+                            <constraint firstItem="1B7-cm-QdS" firstAttribute="leading" secondItem="5sS-8M-bgh" secondAttribute="leadingMargin" constant="-16" id="JhX-Xz-xLb"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="1B7-cm-QdS" secondAttribute="trailing" constant="-16" id="Yxg-hR-8hV"/>
+                            <constraint firstItem="fL7-Pq-jfg" firstAttribute="top" secondItem="1B7-cm-QdS" secondAttribute="bottom" constant="72" id="oka-Y1-Ep0"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="questionsTableView" destination="1B7-cm-QdS" id="He1-u5-XE2"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JCX-Zb-pat" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="206" y="-853"/>
+        </scene>
         <!--Personal Info View Controller-->
         <scene sceneID="iuV-ie-D3Q">
             <objects>
@@ -29,10 +62,21 @@
                                     <segment title="Male"/>
                                 </segments>
                             </segmentedControl>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zGA-S9-qEe">
+                                <rect key="frame" x="255" y="164" width="90" height="30"/>
+                                <state key="normal" title="Continue">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="continueTapped:" destination="3iN-MQ-bqj" eventType="touchUpInside" id="JJX-zE-5UZ"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="centerX" secondItem="4da-Wk-VPc" secondAttribute="centerX" id="3Mr-7G-M0e"/>
+                            <constraint firstItem="zGA-S9-qEe" firstAttribute="top" secondItem="4da-Wk-VPc" secondAttribute="bottom" constant="69" id="A8a-fg-5H2"/>
+                            <constraint firstAttribute="centerX" secondItem="zGA-S9-qEe" secondAttribute="centerX" id="MA2-vS-Id5"/>
                             <constraint firstItem="i4p-TL-Dnv" firstAttribute="top" secondItem="3sw-JP-HJF" secondAttribute="bottom" constant="8" id="pE9-uW-ElU"/>
                             <constraint firstItem="4da-Wk-VPc" firstAttribute="top" secondItem="i4p-TL-Dnv" secondAttribute="bottom" constant="8" id="yVt-HY-Mm7"/>
                             <constraint firstAttribute="centerX" secondItem="i4p-TL-Dnv" secondAttribute="centerX" id="zEL-qv-BJ3"/>

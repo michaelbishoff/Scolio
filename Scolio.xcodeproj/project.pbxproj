@@ -16,6 +16,7 @@
 		751D600A19C3FE9F0010ECA1 /* DragViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 751D600919C3FE9F0010ECA1 /* DragViewController.swift */; };
 		756B85E719C49F640008BAA4 /* AngleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 756B85E619C49F640008BAA4 /* AngleViewController.swift */; };
 		756B85E919C4B3F60008BAA4 /* PersonalInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 756B85E819C4B3F60008BAA4 /* PersonalInfoViewController.swift */; };
+		756B85EB19C4BA990008BAA4 /* QuestionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 756B85EA19C4BA990008BAA4 /* QuestionsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +43,7 @@
 		751D600D19C400C20010ECA1 /* Scolio-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Scolio-Bridging-Header.h"; sourceTree = "<group>"; };
 		756B85E619C49F640008BAA4 /* AngleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AngleViewController.swift; sourceTree = "<group>"; };
 		756B85E819C4B3F60008BAA4 /* PersonalInfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonalInfoViewController.swift; sourceTree = "<group>"; };
+		756B85EA19C4BA990008BAA4 /* QuestionsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuestionsViewController.swift; sourceTree = "<group>"; };
 		97EF1AC67D814C7B90FA9CD7 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3B396D7C2E84C3DB7AC9C8F /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -100,6 +102,7 @@
 				751D600919C3FE9F0010ECA1 /* DragViewController.swift */,
 				756B85E619C49F640008BAA4 /* AngleViewController.swift */,
 				756B85E819C4B3F60008BAA4 /* PersonalInfoViewController.swift */,
+				756B85EA19C4BA990008BAA4 /* QuestionsViewController.swift */,
 				751D5FED19C3F03E0010ECA1 /* Main.storyboard */,
 				751D5FF019C3F03E0010ECA1 /* Images.xcassets */,
 				751D5FF219C3F03E0010ECA1 /* LaunchScreen.xib */,
@@ -270,6 +273,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				756B85E919C4B3F60008BAA4 /* PersonalInfoViewController.swift in Sources */,
+				756B85EB19C4BA990008BAA4 /* QuestionsViewController.swift in Sources */,
 				751D600A19C3FE9F0010ECA1 /* DragViewController.swift in Sources */,
 				751D5FEA19C3F03E0010ECA1 /* AppDelegate.swift in Sources */,
 				756B85E719C49F640008BAA4 /* AngleViewController.swift in Sources */,
