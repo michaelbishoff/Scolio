@@ -9,6 +9,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>Pods-Reveal-iOS-SDK.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-UIView+draggable.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -22,17 +27,22 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>3FACFA32D5304BB29CB9A060</key>
+		<key>02C7D775BD32469B81C8B66D</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>49DDC4663249419D8BC1822A</key>
+		<key>8F8A5AC5CFE74C9F9A668952</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>85A4016951114AC6BBED0914</key>
+		<key>E7C47E69338D4CB0A51BA62E</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>FB2CA2C6CC9B407FA73DD9A3</key>
 		<dict>
 			<key>primary</key>
 			<true/>

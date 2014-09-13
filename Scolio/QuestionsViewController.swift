@@ -37,7 +37,7 @@ class QuestionsViewController: UIViewController, UIImagePickerControllerDelegate
         
         let picker = UIImagePickerController()
         picker.delegate = self
-        picker.sourceType = UIImagePickerControllerSourceType.Camera
+        picker.sourceType = UIImagePickerControllerSourceType.PhotoLibrary
         presentViewController(picker, animated: true, completion: nil)
         
     }
@@ -45,7 +45,7 @@ class QuestionsViewController: UIViewController, UIImagePickerControllerDelegate
     func imagePickerController(picker: UIImagePickerController!, didFinishPickingImage image: UIImage!, editingInfo: [NSObject : AnyObject]!) {
         picker.dismissViewControllerAnimated(true, completion: nil)
         let sb = UIStoryboard(name: "Main", bundle: NSBundle.mainBundle())
-        let dv = sb.instantiateViewControllerWithIdentifier("dvc") as DragViewController
+        let dv = sb.instantiateViewControllerWithIdentifier("divc") as DisplayImageViewController
         
         self.showViewController(dv, sender: self)
         dv.image = image

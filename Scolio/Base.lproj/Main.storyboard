@@ -193,6 +193,39 @@
             </objects>
             <point key="canvasLocation" x="1018" y="-202"/>
         </scene>
+        <!--Display Image View Controller-->
+        <scene sceneID="Gum-SB-sIU">
+            <objects>
+                <viewController storyboardIdentifier="divc" id="oY0-2y-bFe" customClass="DisplayImageViewController" customModule="Scolio" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="hN8-SA-FNy"/>
+                        <viewControllerLayoutGuide type="bottom" id="RGI-Oe-uhM"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="IDH-Gd-0yr">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="IRY-u0-d0a">
+                                <rect key="frame" x="0.0" y="64" width="600" height="536"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="IRY-u0-d0a" firstAttribute="leading" secondItem="IDH-Gd-0yr" secondAttribute="leadingMargin" constant="-16" id="2fO-mg-HKZ"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="IRY-u0-d0a" secondAttribute="trailing" constant="-16" id="55a-Uw-nhf"/>
+                            <constraint firstItem="IRY-u0-d0a" firstAttribute="top" secondItem="hN8-SA-FNy" secondAttribute="bottom" id="6lg-R3-iIU"/>
+                            <constraint firstItem="RGI-Oe-uhM" firstAttribute="top" secondItem="IRY-u0-d0a" secondAttribute="bottom" id="i7t-fa-fRA"/>
+                        </constraints>
+                    </view>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <connections>
+                        <outlet property="takenImageView" destination="IRY-u0-d0a" id="aEp-Mc-oje"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DZs-83-aMC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="773" y="449"/>
+        </scene>
         <!--Drag View Controller-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
@@ -201,13 +234,10 @@
                         <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS" customClass="DragView" customModule="Scolio" customModuleProvider="target">
+                    <view key="view" opaque="NO" contentMode="scaleToFill" id="kh9-bI-dsS" customClass="DragView" customModule="Scolio" customModuleProvider="target">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="HYK-ry-3t5">
-                                <rect key="frame" x="28" y="20" width="544" height="547"/>
-                            </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5NO-Wm-7Td" customClass="DragNodeView" customModule="Scolio" customModuleProvider="target">
                                 <rect key="frame" x="550" y="517" width="50" height="50"/>
                                 <color key="backgroundColor" red="0.26666668059999998" green="0.29803922770000002" blue="0.34901961679999999" alpha="1" colorSpace="deviceRGB"/>
@@ -216,8 +246,8 @@
                                     <constraint firstAttribute="height" constant="50" id="w9c-x3-gtN"/>
                                 </constraints>
                             </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9Vz-Ce-xAi" customClass="DragNodeView" customModule="Scolio" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="20" width="50" height="50"/>
+                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9Vz-Ce-xAi" customClass="DragNodeView" customModule="Scolio" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="92" width="50" height="50"/>
                                 <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="50" id="TbL-rv-0Tq"/>
@@ -225,14 +255,14 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Qgh-XS-JFZ" customClass="DragNodeView" customModule="Scolio" customModuleProvider="target">
-                                <rect key="frame" x="550" y="20" width="50" height="50"/>
+                                <rect key="frame" x="550" y="92" width="50" height="50"/>
                                 <color key="backgroundColor" red="0.26666668059999998" green="0.29803922770000002" blue="0.34901961679999999" alpha="1" colorSpace="deviceRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="pXE-sC-5Vk"/>
                                     <constraint firstAttribute="width" constant="50" id="vSU-BE-YJe"/>
                                 </constraints>
                             </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MEj-zz-qJN" customClass="DragNodeView" customModule="Scolio" customModuleProvider="target">
+                            <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MEj-zz-qJN" customClass="DragNodeView" customModule="Scolio" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="517" width="50" height="50"/>
                                 <color key="backgroundColor" red="0.26666668059999998" green="0.29803922770000002" blue="0.34901961679999999" alpha="1" colorSpace="deviceRGB"/>
                                 <constraints>
@@ -241,21 +271,12 @@
                                 </constraints>
                             </view>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="5NO-Wm-7Td" firstAttribute="leading" secondItem="HYK-ry-3t5" secondAttribute="trailing" constant="-22" id="2Sx-SW-GXZ"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="HYK-ry-3t5" secondAttribute="trailing" constant="12" id="6Wa-R0-Acd"/>
-                            <constraint firstItem="MEj-zz-qJN" firstAttribute="bottom" secondItem="HYK-ry-3t5" secondAttribute="bottom" id="FWP-xF-X0s"/>
-                            <constraint firstItem="HYK-ry-3t5" firstAttribute="leading" secondItem="MEj-zz-qJN" secondAttribute="trailing" constant="-22" id="Fan-RU-lCq"/>
-                            <constraint firstItem="9Vz-Ce-xAi" firstAttribute="top" secondItem="HYK-ry-3t5" secondAttribute="top" id="HdJ-HV-auP"/>
-                            <constraint firstItem="Qgh-XS-JFZ" firstAttribute="leading" secondItem="HYK-ry-3t5" secondAttribute="trailing" constant="-22" id="Rtf-8S-66d"/>
-                            <constraint firstItem="5NO-Wm-7Td" firstAttribute="bottom" secondItem="HYK-ry-3t5" secondAttribute="bottom" id="UFz-uc-D2s"/>
-                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="HYK-ry-3t5" secondAttribute="bottom" constant="33" id="WSy-6L-myy"/>
-                            <constraint firstItem="HYK-ry-3t5" firstAttribute="leading" secondItem="9Vz-Ce-xAi" secondAttribute="trailing" constant="-22" id="jGI-L1-Uy2"/>
-                            <constraint firstItem="HYK-ry-3t5" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" id="oFX-rq-XBj"/>
-                            <constraint firstItem="Qgh-XS-JFZ" firstAttribute="top" secondItem="HYK-ry-3t5" secondAttribute="top" id="t2e-cp-O1X"/>
-                            <constraint firstItem="5NO-Wm-7Td" firstAttribute="bottom" secondItem="HYK-ry-3t5" secondAttribute="bottom" id="xMM-p6-k3c"/>
-                            <constraint firstItem="HYK-ry-3t5" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="12" id="yM1-hW-8CW"/>
+                            <constraint firstItem="Qgh-XS-JFZ" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="72" id="FDK-jG-SR9"/>
+                            <constraint firstItem="9Vz-Ce-xAi" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="72" id="Huw-YK-0wm"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Qgh-XS-JFZ" secondAttribute="trailing" constant="-16" id="omv-8j-HmJ"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="5NO-Wm-7Td" secondAttribute="trailing" constant="-16" id="yKz-c2-26J"/>
+                            <constraint firstItem="5NO-Wm-7Td" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="497" id="yi5-eR-Cpy"/>
                         </constraints>
                         <connections>
                             <outlet property="bottomLeft" destination="MEj-zz-qJN" id="8OG-wS-nBM"/>
@@ -267,14 +288,13 @@
                     <connections>
                         <outlet property="bottomLeft" destination="MEj-zz-qJN" id="h6f-xs-rZA"/>
                         <outlet property="bottomRight" destination="5NO-Wm-7Td" id="9ib-wD-Fkw"/>
-                        <outlet property="snappedImageView" destination="HYK-ry-3t5" id="gy4-is-Tse"/>
                         <outlet property="topLeft" destination="9Vz-Ce-xAi" id="EYu-ka-zAc"/>
                         <outlet property="topRight" destination="Qgh-XS-JFZ" id="Dfq-DJ-p4a"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1018" y="448"/>
+            <point key="canvasLocation" x="1402" y="449"/>
         </scene>
         <!--Angle View Controller-->
         <scene sceneID="ijZ-km-EGP">

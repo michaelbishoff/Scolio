@@ -17,6 +17,7 @@
 		756B85E719C49F640008BAA4 /* AngleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 756B85E619C49F640008BAA4 /* AngleViewController.swift */; };
 		756B85E919C4B3F60008BAA4 /* PersonalInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 756B85E819C4B3F60008BAA4 /* PersonalInfoViewController.swift */; };
 		756B85EB19C4BA990008BAA4 /* QuestionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 756B85EA19C4BA990008BAA4 /* QuestionsViewController.swift */; };
+		75EDE53019C502C700AB2082 /* DisplayImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75EDE52F19C502C700AB2082 /* DisplayImageViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,7 @@
 		756B85E619C49F640008BAA4 /* AngleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AngleViewController.swift; sourceTree = "<group>"; };
 		756B85E819C4B3F60008BAA4 /* PersonalInfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonalInfoViewController.swift; sourceTree = "<group>"; };
 		756B85EA19C4BA990008BAA4 /* QuestionsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuestionsViewController.swift; sourceTree = "<group>"; };
+		75EDE52F19C502C700AB2082 /* DisplayImageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DisplayImageViewController.swift; sourceTree = "<group>"; };
 		97EF1AC67D814C7B90FA9CD7 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3B396D7C2E84C3DB7AC9C8F /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -100,6 +102,7 @@
 			children = (
 				751D5FE919C3F03E0010ECA1 /* AppDelegate.swift */,
 				751D600919C3FE9F0010ECA1 /* DragViewController.swift */,
+				75EDE52F19C502C700AB2082 /* DisplayImageViewController.swift */,
 				756B85E619C49F640008BAA4 /* AngleViewController.swift */,
 				756B85E819C4B3F60008BAA4 /* PersonalInfoViewController.swift */,
 				756B85EA19C4BA990008BAA4 /* QuestionsViewController.swift */,
@@ -276,6 +279,7 @@
 				756B85EB19C4BA990008BAA4 /* QuestionsViewController.swift in Sources */,
 				751D600A19C3FE9F0010ECA1 /* DragViewController.swift in Sources */,
 				751D5FEA19C3F03E0010ECA1 /* AppDelegate.swift in Sources */,
+				75EDE53019C502C700AB2082 /* DisplayImageViewController.swift in Sources */,
 				756B85E719C49F640008BAA4 /* AngleViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -402,6 +406,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = Scolio/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "Scolio/Scolio-Bridging-Header.h";
@@ -416,6 +421,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = Scolio/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "Scolio/Scolio-Bridging-Header.h";

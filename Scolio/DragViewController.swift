@@ -9,18 +9,18 @@
 import UIKit
 
 class DragViewController: UIViewController {
-    var image: UIImage?
+    
     
     @IBOutlet var topLeft: DragNodeView!
     @IBOutlet var topRight: DragNodeView!
     @IBOutlet var bottomLeft: DragNodeView!
     @IBOutlet var bottomRight: DragNodeView!
 
-    @IBOutlet var snappedImageView: UIImageView!
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        snappedImageView.image = image
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -37,6 +37,7 @@ class DragView: UIView {
     @IBOutlet var topRight: DragNodeView!
     @IBOutlet var bottomLeft: DragNodeView!
     @IBOutlet var bottomRight: DragNodeView!
+
     
     var topPair: (DragNodeView!, DragNodeView!) {// ¯\_(ツ)_/¯
         return (topLeft.frame.origin.x <= topRight.frame.origin.x) ? (topLeft, topRight) : (topRight, topLeft)
@@ -52,7 +53,6 @@ class DragView: UIView {
     
     
     override func drawRect(rect: CGRect) {
-
         let context = UIGraphicsGetCurrentContext()
         CGContextSaveGState(context)
         
