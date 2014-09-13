@@ -13,13 +13,12 @@
                         <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS" customClass="DragView" customModule="Scolio" customModuleProvider="target">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="HYK-ry-3t5">
                                 <rect key="frame" x="28" y="20" width="544" height="547"/>
-                                <color key="backgroundColor" red="0.82553411990000003" green="0.0" blue="0.0089578759669999997" alpha="1" colorSpace="calibratedRGB"/>
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5NO-Wm-7Td" customClass="DragNodeView" customModule="Scolio" customModuleProvider="target">
                                 <rect key="frame" x="550" y="517" width="50" height="50"/>
@@ -70,7 +69,19 @@
                             <constraint firstItem="5NO-Wm-7Td" firstAttribute="bottom" secondItem="HYK-ry-3t5" secondAttribute="bottom" id="xMM-p6-k3c"/>
                             <constraint firstItem="HYK-ry-3t5" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="12" id="yM1-hW-8CW"/>
                         </constraints>
+                        <connections>
+                            <outlet property="bottomLeft" destination="MEj-zz-qJN" id="8OG-wS-nBM"/>
+                            <outlet property="bottomRight" destination="5NO-Wm-7Td" id="DQb-3w-Tid"/>
+                            <outlet property="topLeft" destination="9Vz-Ce-xAi" id="0Ma-Cd-9Qc"/>
+                            <outlet property="topRight" destination="Qgh-XS-JFZ" id="4vX-84-G0p"/>
+                        </connections>
                     </view>
+                    <connections>
+                        <outlet property="bottomLeft" destination="MEj-zz-qJN" id="h6f-xs-rZA"/>
+                        <outlet property="bottomRight" destination="5NO-Wm-7Td" id="9ib-wD-Fkw"/>
+                        <outlet property="topLeft" destination="9Vz-Ce-xAi" id="EYu-ka-zAc"/>
+                        <outlet property="topRight" destination="Qgh-XS-JFZ" id="Dfq-DJ-p4a"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>

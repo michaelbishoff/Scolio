@@ -9,6 +9,10 @@
 import UIKit
 
 class DragViewController: UIViewController {
+    @IBOutlet var topLeft: DragNodeView!
+    @IBOutlet var topRight: DragNodeView!
+    @IBOutlet var bottomLeft: DragNodeView!
+    @IBOutlet var bottomRight: DragNodeView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,7 +25,60 @@ class DragViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    
 
+}
+
+class DragView: UIView {
+    @IBOutlet var topLeft: DragNodeView!
+    @IBOutlet var topRight: DragNodeView!
+    @IBOutlet var bottomLeft: DragNodeView!
+    @IBOutlet var bottomRight: DragNodeView!
+    
+    required init(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+    }
+    func center() -> CGPoint{
+        return CGPoint(x: self.bounds.origin.x+self.bounds.size.width/2, y: self.bounds.origin.y+self.bounds.size.height/2)
+    }
+    override func drawRect(rect: CGRect) {
+//        CGContextRef context = UIGraphicsGetCurrentContext();
+//        CGContextSaveGState(context);
+//        
+//        CGContextTranslateCTM(context, 0.0, rect.size.height);
+//        CGContextScaleCTM(context, 1.0, -1.0);
+//        
+//        CGContextSetShouldAntialias(context, YES);
+//        CGContextSetLineWidth(context, 1.0f);
+//        CGContextSetRGBStrokeColor(context, 0.7, 0.7, 0.7, 1.0);
+//        
+//        CGContextMoveToPoint(context, rect.size.width/2, rect.size.height/2);
+//        CGContextAddLineToPoint(context, self.touchedPoint.x, self.touchedPoint.y);
+//        CGContextDrawPath(context, kCGPathStroke); 
+//        
+//        CGContextRestoreGState(context);
+
+        let context = UIGraphicsGetCurrentContext()
+        CGContextSaveGState(context)
+        
+        CGContextTranslateCTM(context, 0.0, rect.height)
+        CGContextScaleCTM(context, 1.0, -1.0)
+        
+        CGContextSetShouldAntialias(context, true)
+        CGContextSetLineWidth(context, 4)
+        CGContextSetRGBStrokeColor(context, 0.7, 0.7, 0.7, 1.0)
+        self.frame.height
+        CGContextMoveToPoint(context, self.topLeft.center.x, self.frame.height-self.topLeft.center.y)
+        CGContextAddLineToPoint(context, self.topRight.center.x, self.frame.height-self.topRight.center.y)
+        CGContextDrawPath(context, kCGPathStroke)
+        
+        CGContextMoveToPoint(context, self.bottomLeft.center.x, self.frame.height-self.bottomLeft.center.y)
+        CGContextAddLineToPoint(context, self.bottomRight.center.x, self.frame.height-self.bottomRight.center.y)
+        CGContextDrawPath(context, kCGPathStroke)
+        
+        CGContextRestoreGState(context)
+    
+    }
 }
 
 

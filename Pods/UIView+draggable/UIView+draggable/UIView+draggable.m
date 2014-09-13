@@ -27,7 +27,7 @@
 	
 	CGPoint translation = [sender translationInView:[self superview]];
 	[self setCenter:CGPointMake([self center].x + translation.x, [self center].y + translation.y)];
-	
+    [self.superview setNeedsDisplay];
 	[sender setTranslation:(CGPoint){0, 0} inView:[self superview]];
 }
 
