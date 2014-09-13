@@ -24,7 +24,9 @@ class PersonalInfoViewController: UIViewController {
     }
     
     @IBAction func continueTapped(sender: UIButton) {
-        
+        let sb = UIStoryboard(name: "Main", bundle: NSBundle.mainBundle())
+        let qvc = sb.instantiateViewControllerWithIdentifier("qvc") as QuestionsViewController
+        self.showViewController(qvc, sender: self)
     }
 
     /*

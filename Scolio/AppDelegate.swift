@@ -44,3 +44,21 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 }
 
+
+class Human {
+    var hasChronicHeadaches: Bool?
+    var hasBackNeckKneePain: Bool?
+    var hasBreathingIssues: Bool?
+    var hasPainRadiatingFromSinglePoint: Bool?
+    
+    class var currentHuman : Human {
+    struct Static {
+        static var onceToken : dispatch_once_t = 0
+        static var instance : Human? = nil
+        }
+        dispatch_once(&Static.onceToken) {
+            Static.instance = Human()
+        }
+        return Static.instance!
+    }
+}
