@@ -40,6 +40,7 @@ class DragView: UIView {
     }
     
     
+    
     override func drawRect(rect: CGRect) {
 //        CGContextRef context = UIGraphicsGetCurrentContext();
 //        CGContextSaveGState(context);
@@ -66,7 +67,6 @@ class DragView: UIView {
         CGContextSetShouldAntialias(context, true)
         CGContextSetLineWidth(context, 4)
         CGContextSetRGBStrokeColor(context, 0.7, 0.7, 0.7, 1.0)
-        self.frame.height
         CGContextMoveToPoint(context, self.topLeft.center.x, self.frame.height-self.topLeft.center.y)
         CGContextAddLineToPoint(context, self.topRight.center.x, self.frame.height-self.topRight.center.y)
         CGContextDrawPath(context, kCGPathStroke)
@@ -82,6 +82,17 @@ class DragView: UIView {
 
 
 class DragNodeView: UIView {
+    
+    
+    
+    func realCenter() -> CGPoint {
+        let standardAnchor = CGPoint(x: 0.5, y: 0.5)
+        let anchor = self.layer.anchorPoint
+        
+        let diff = CGPoint(x: standardAnchor.x-anchor.x, y: standardAnchor.y-anchor.y)
+        
+        return diff
+    }
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -113,4 +124,9 @@ class DragNodeView: UIView {
     //    }
     
     
+}
+
+infix operator + { associativity left precedence 140 }
+func + (left: CGPoint, right: CGPoint) -> CGPoint {
+    return CGPoint(x: left.x+right.x, y: left.y+right.y)
 }
