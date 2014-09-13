@@ -12,7 +12,7 @@
 
 #import <UIKit/UIKit.h>
 
-#define M13CheckboxDefaultHeight 24.0
+#define M13CheckboxDefaultHeight 40
 
 #define kBoxRadius 0.1875
 #define kBoxStrokeWidth 0.05
