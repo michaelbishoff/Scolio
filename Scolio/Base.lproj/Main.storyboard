@@ -270,18 +270,31 @@
                                     <constraint firstAttribute="width" constant="50" id="m7P-lB-ezQ"/>
                                 </constraints>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0oc-w3-SIa">
+                                <rect key="frame" x="417" y="562" width="46" height="30"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="sxc-y3-4AG" kind="show" id="8fq-fb-UpW"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <constraints>
                             <constraint firstItem="Qgh-XS-JFZ" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="72" id="FDK-jG-SR9"/>
                             <constraint firstItem="9Vz-Ce-xAi" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="72" id="Huw-YK-0wm"/>
                             <constraint firstItem="MEj-zz-qJN" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="451" id="MKP-jI-XP2"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="0oc-w3-SIa" secondAttribute="trailing" constant="121" id="TtG-QG-G1l"/>
                             <constraint firstItem="5NO-Wm-7Td" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="451" id="nGd-b5-DRg"/>
                             <constraint firstAttribute="trailingMargin" secondItem="Qgh-XS-JFZ" secondAttribute="trailing" constant="-16" id="omv-8j-HmJ"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="0oc-w3-SIa" secondAttribute="bottom" constant="8" id="x8r-k5-5zE"/>
+                            <constraint firstItem="0oc-w3-SIa" firstAttribute="trailing" secondItem="kh9-bI-dsS" secondAttribute="trailingMargin" id="y9B-XH-Q0z"/>
                             <constraint firstAttribute="trailingMargin" secondItem="5NO-Wm-7Td" secondAttribute="trailing" constant="-16" id="yKz-c2-26J"/>
                             <constraint firstItem="5NO-Wm-7Td" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="497" id="yi5-eR-Cpy"/>
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
+                                <exclude reference="y9B-XH-Q0z"/>
                                 <exclude reference="yi5-eR-Cpy"/>
                             </mask>
                         </variation>
@@ -314,12 +327,37 @@
                     <view key="view" contentMode="scaleToFill" id="KYT-TK-D9F">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uNa-yf-ZcT">
+                                <rect key="frame" x="137" y="279" width="326" height="42"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="326" id="WQ5-dN-Hfr"/>
+                                    <constraint firstAttribute="width" constant="135" id="ezh-Bc-uFZ"/>
+                                    <constraint firstAttribute="height" constant="42" id="k0K-fY-Ho8"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="ezh-Bc-uFZ"/>
+                                    </mask>
+                                </variation>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="uNa-yf-ZcT" secondAttribute="centerX" id="jxC-YT-wQy"/>
+                            <constraint firstAttribute="centerY" secondItem="uNa-yf-ZcT" secondAttribute="centerY" constant="0.5" id="znD-NV-oU4"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="angleLabel" destination="uNa-yf-ZcT" id="hlz-y8-od8"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Mbe-26-oD5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="206" y="1099"/>
+            <point key="canvasLocation" x="2166" y="454"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Mss-DF-wgl">

@@ -12,11 +12,12 @@ import CoreMotion
 class AngleViewController: UIViewController {
     let motionManager = CMMotionManager()
 
+    @IBOutlet var angleLabel: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
         motionManager.startAccelerometerUpdatesToQueue(NSOperationQueue.currentQueue(), withHandler: { (accelData, error) -> Void in
             let angle = atan2(accelData.acceleration.x, accelData.acceleration.y) * 180 / M_PI
-            println("DATA: \(angle)")
+            self.angleLabel.text = "DATA: \(angle)"
         })
     }
 
