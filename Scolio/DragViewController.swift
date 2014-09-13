@@ -9,15 +9,18 @@
 import UIKit
 
 class DragViewController: UIViewController {
+    var image: UIImage?
+    
     @IBOutlet var topLeft: DragNodeView!
     @IBOutlet var topRight: DragNodeView!
     @IBOutlet var bottomLeft: DragNodeView!
     @IBOutlet var bottomRight: DragNodeView!
 
+    @IBOutlet var snappedImageView: UIImageView!
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        snappedImageView.image = image
     }
 
     override func didReceiveMemoryWarning() {

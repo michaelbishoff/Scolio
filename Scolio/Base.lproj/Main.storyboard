@@ -139,10 +139,10 @@
             </objects>
             <point key="canvasLocation" x="389" y="-202"/>
         </scene>
-        <!--Personal Info View Controller-->
+        <!--Personal Info-->
         <scene sceneID="iuV-ie-D3Q">
             <objects>
-                <viewController id="3iN-MQ-bqj" customClass="PersonalInfoViewController" customModule="Scolio" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Personal Info" id="3iN-MQ-bqj" customClass="PersonalInfoViewController" customModule="Scolio" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="3sw-JP-HJF"/>
                         <viewControllerLayoutGuide type="bottom" id="6UO-fL-sUE"/>
@@ -196,7 +196,7 @@
         <!--Drag View Controller-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="DragViewController" customModule="Scolio" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="dvc" id="vXZ-lx-hvc" customClass="DragViewController" customModule="Scolio" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
@@ -267,6 +267,7 @@
                     <connections>
                         <outlet property="bottomLeft" destination="MEj-zz-qJN" id="h6f-xs-rZA"/>
                         <outlet property="bottomRight" destination="5NO-Wm-7Td" id="9ib-wD-Fkw"/>
+                        <outlet property="snappedImageView" destination="HYK-ry-3t5" id="gy4-is-Tse"/>
                         <outlet property="topLeft" destination="9Vz-Ce-xAi" id="EYu-ka-zAc"/>
                         <outlet property="topRight" destination="Qgh-XS-JFZ" id="Dfq-DJ-p4a"/>
                     </connections>

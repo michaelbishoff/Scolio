@@ -8,7 +8,7 @@
 
 import UIKit
 
-class QuestionsViewController: UIViewController {
+class QuestionsViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     @IBOutlet var chronicBox: M13Checkbox!
     @IBOutlet var backNeckKneeBox: M13Checkbox!
     @IBOutlet var breathingBox: M13Checkbox!
@@ -35,6 +35,22 @@ class QuestionsViewController: UIViewController {
         
         println("\(Human.currentHuman.hasChronicHeadaches) \(Human.currentHuman.hasBackNeckKneePain) \(Human.currentHuman.hasBreathingIssues) \(Human.currentHuman.hasPainRadiatingFromSinglePoint)")
         
+        let picker = UIImagePickerController()
+        picker.delegate = self
+        picker.sourceType = UIImagePickerControllerSourceType.Camera
+        presentViewController(picker, animated: true, completion: nil)
+        
     }
-
+    
+    func imagePickerController(picker: UIImagePickerController!, didFinishPickingImage image: UIImage!, editingInfo: [NSObject : AnyObject]!) {
+        picker.dismissViewControllerAnimated(true, completion: nil)
+        let sb = UIStoryboard(name: "Main", bundle: NSBundle.mainBundle())
+        let dv = sb.instantiateViewControllerWithIdentifier("dvc") as DragViewController
+        
+        self.showViewController(dv, sender: self)
+        dv.image = image
+        
+    }
+    
+   
 }
