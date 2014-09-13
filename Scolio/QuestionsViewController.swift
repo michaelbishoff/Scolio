@@ -37,7 +37,7 @@ class QuestionsViewController: UIViewController, UIImagePickerControllerDelegate
         
         let picker = UIImagePickerController()
         picker.delegate = self
-        picker.sourceType = UIImagePickerControllerSourceType.PhotoLibrary
+        picker.sourceType = UIImagePickerControllerSourceType.Camera
         presentViewController(picker, animated: true, completion: nil)
         
     }
