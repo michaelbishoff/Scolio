@@ -38,9 +38,8 @@ class DragView: UIView {
     required init(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
     }
-    func center() -> CGPoint{
-        return CGPoint(x: self.bounds.origin.x+self.bounds.size.width/2, y: self.bounds.origin.y+self.bounds.size.height/2)
-    }
+    
+    
     override func drawRect(rect: CGRect) {
 //        CGContextRef context = UIGraphicsGetCurrentContext();
 //        CGContextSaveGState(context);
