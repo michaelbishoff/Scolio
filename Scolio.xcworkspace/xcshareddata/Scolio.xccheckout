@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>4322AF57-6EF9-4985-8708-E16046448786</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Scolio</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>505AF46180B9419A536ADE1B77CE63BE9F45F8ED</key>
+		<string>github.com:michaelbishoff/Scolio.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Scolio.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>505AF46180B9419A536ADE1B77CE63BE9F45F8ED</key>
+		<string>..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>github.com:michaelbishoff/Scolio.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>505AF46180B9419A536ADE1B77CE63BE9F45F8ED</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>505AF46180B9419A536ADE1B77CE63BE9F45F8ED</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Scolio</string>
+		</dict>
+	</array>
+</dict>
+</plist>
