@@ -10,11 +10,7 @@ import UIKit
 
 class DragViewController: UIViewController {
     var image: UIImage?
-    
-    @IBOutlet var topLeft: DragNodeView!
-    @IBOutlet var topRight: DragNodeView!
-    @IBOutlet var bottomLeft: DragNodeView!
-    @IBOutlet var bottomRight: DragNodeView!
+    @IBOutlet var drag: DragView!
 
     @IBOutlet var snappedImageView: UIImageView!
     override func viewDidLoad() {
@@ -33,26 +29,39 @@ class DragViewController: UIViewController {
 }
 
 class DragView: UIView {
-    @IBOutlet var topLeft: DragNodeView!
-    @IBOutlet var topRight: DragNodeView!
-    @IBOutlet var bottomLeft: DragNodeView!
-    @IBOutlet var bottomRight: DragNodeView!
+    var topLeft: DragNodeView
+    var topRight: DragNodeView
+    var bottomLeft: DragNodeView
+    var bottomRight: DragNodeView
     
-    var topPair: (DragNodeView!, DragNodeView!) {// ¯\_(ツ)_/¯
-        return (topLeft.frame.origin.x <= topRight.frame.origin.x) ? (topLeft, topRight) : (topRight, topLeft)
-    }
+//    var topPair: (DragNodeView, DragNodeView! {// ¯\_(ツ)_/¯
+//        return (topLeft.frame.origin.x <= topRight.frame.origin.x) ? (topLeft, topRight) : (topRight, topLeft)
+//    }
     
     
     
     
     required init(coder aDecoder: NSCoder) {
+        
+        topLeft = DragNodeView(frame: CGRect(x: 40, y: 40, width: 40, height: 40))
+        topRight = DragNodeView(frame: CGRect(x: 140, y: 40, width: 40, height: 40))
+        bottomLeft = DragNodeView(frame: CGRect(x: 240, y: 40, width: 40, height: 40))
+        bottomRight = DragNodeView(frame: CGRect(x: 300, y: 40, width: 40, height: 40))
+        
+        
+        
         super.init(coder: aDecoder)
+        
+        self.addSubview(topLeft)
+        self.addSubview(topRight)
+        self.addSubview(bottomLeft)
+        self.addSubview(bottomRight)
     }
     
     
     
     override func drawRect(rect: CGRect) {
-
+        self.superview?.setNeedsDisplay()
         let context = UIGraphicsGetCurrentContext()
         CGContextSaveGState(context)
         
