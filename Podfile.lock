@@ -1,16 +1,19 @@
 PODS:
   - M13Checkbox (1.1.2)
   - Reveal-iOS-SDK (1.0.4)
+  - SAMRateLimit (0.2.0)
   - UIView+draggable (0.2)
 
 DEPENDENCIES:
   - M13Checkbox
   - Reveal-iOS-SDK
+  - SAMRateLimit
   - UIView+draggable
 
 SPEC CHECKSUMS:
   M13Checkbox: e87ebe28627368b1c6d2233282d711a3854dfe3f
   Reveal-iOS-SDK: d3c8e109d42219daaa7a6e1ad2de34f0bdbb7a88
+  SAMRateLimit: f47a9961333e2d44fe189ef2233cee48012905ee
   UIView+draggable: ad1c3a0f862aca1923c45c3e05d68c7852014436
 
 COCOAPODS: 0.33.1

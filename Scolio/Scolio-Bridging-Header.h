@@ -5,3 +5,4 @@
 #import <UIKit/UIKit.h>
 #import "UIVIew+draggable.h"
 #import <M13Checkbox/M13Checkbox.h>
+#import <SAMRateLimit/SAMRateLimit.h>-
