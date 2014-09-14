@@ -29,17 +29,23 @@ class DragViewController: UIViewController, UIImagePickerControllerDelegate, UIN
     }
     
     @IBAction func continueTapped(sender: UIButton) {
-        let picker = UIImagePickerController()
-        picker.delegate = self
-        picker.sourceType = UIImagePickerControllerSourceType.Camera
-        presentViewController(picker, animated: true, completion: nil)
+//        let picker = UIImagePickerController()
+//        picker.delegate = self
+//        picker.sourceType = UIImagePickerControllerSourceType.Camera
+//        presentViewController(picker, animated: true, completion: nil)
+        let v = UIStoryboard(name: "Main", bundle: NSBundle.mainBundle()).instantiateViewControllerWithIdentifier("conclusion") as ConclusionViewController
+        
+        //        v.takenImage = image
+        self.showViewController(v, sender: self)
         
     }
     func imagePickerController(picker: UIImagePickerController!, didFinishPickingImage image: UIImage!, editingInfo: [NSObject : AnyObject]!) {
         picker.dismissViewControllerAnimated(true, completion: nil)
         
-        let v = UIStoryboard(name: "Main", bundle: NSBundle.mainBundle()).instantiateViewControllerWithIdentifier("dsp") as DrawSpineViewController
-        v.takenImage = image
+//        let v = UIStoryboard(name: "Main", bundle: NSBundle.mainBundle()).instantiateViewControllerWithIdentifier("dsp") as DrawSpineViewController
+        let v = UIStoryboard(name: "Main", bundle: NSBundle.mainBundle()).instantiateViewControllerWithIdentifier("conclusion") as ConclusionViewController
+        
+//        v.takenImage = image
         self.showViewController(v, sender: self)
     }
 
@@ -79,8 +85,9 @@ class DragView: UIView {
         CGContextMoveToPoint(context, self.topLeft.center.x, self.frame.height-self.topLeft.center.y)
         CGContextAddLineToPoint(context, self.topRight.center.x, self.frame.height-self.topRight.center.y)
         CGContextDrawPath(context, kCGPathStroke)
+        Human.currentHuman.topAngle = DragNodeView.angle(self.topLeft, self.topRight)
+        Human.currentHuman.bottomAngle = DragNodeView.angle(self.bottomLeft, self.bottomRight)
         
-        println("Angle: \(DragNodeView.angle(self.topLeft, self.topRight))")
         CGContextMoveToPoint(context, self.bottomLeft.center.x, self.frame.height-self.bottomLeft.center.y)
         CGContextAddLineToPoint(context, self.bottomRight.center.x, self.frame.height-self.bottomRight.center.y)
         CGContextDrawPath(context, kCGPathStroke)

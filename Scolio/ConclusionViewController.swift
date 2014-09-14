@@ -13,8 +13,33 @@ class ConclusionViewController: UIViewController {
     @IBOutlet var resultsLabel: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        var count = 0
+        let c = Human.currentHuman
+        
+        if (fabs(c.topAngle!) >= 10.0) {
+            count++
+        }
+        
+        if (fabs(c.bottomAngle!) >= 10.0) {
+            count++
+        }
+        if (c.hasChronicHeadaches!){
+            count++
+        }
+        if (c.hasBackNeckKneePain!){
+            count++
+        }
+        if (c.hasBreathingIssues!){
+            count++
+        }
+        if (c.hasPainRadiatingFromSinglePoint!){
+            count++
+        }
+        
 
-        // Do any additional setup after loading the view.
+        self.resultsLabel.text = (count >= 3 ) ? "There is a chance you may have, or may be at risk for, scoliosis." : "You do not too many obvious signs of scoliosis. Nonetheless, Scolio recommends you still see a doctor for anything you are uncertain about. "
+
     }
 
     override func didReceiveMemoryWarning() {

@@ -16,6 +16,17 @@ class QuestionsViewController: UIViewController, UIImagePickerControllerDelegate
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        chronicBox.strokeColor = UIColor(red: 115/255, green: 173/255, blue: 186/255, alpha: 1)
+        chronicBox.checkColor = UIColor(red: 110/255, green: 163/255, blue: 176/255, alpha: 1)
+        
+        backNeckKneeBox.strokeColor = UIColor(red: 115/255, green: 173/255, blue: 186/255, alpha: 1)
+        backNeckKneeBox.checkColor = UIColor(red: 110/255, green: 163/255, blue: 176/255, alpha: 1)
+        
+        breathingBox.strokeColor = UIColor(red: 115/255, green: 173/255, blue: 186/255, alpha: 1)
+        breathingBox.checkColor = UIColor(red: 110/255, green: 163/255, blue: 176/255, alpha: 1)
+        
+        singlePointBox.strokeColor = UIColor(red: 115/255, green: 173/255, blue: 186/255, alpha: 1)
+        singlePointBox.checkColor = UIColor(red: 110/255, green: 163/255, blue: 176/255, alpha: 1)
         
         // Do any additional setup after loading the view.
     }
