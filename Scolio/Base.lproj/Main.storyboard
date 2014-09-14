@@ -384,7 +384,7 @@
         <!--Angle View Controller-->
         <scene sceneID="ijZ-km-EGP">
             <objects>
-                <viewController id="sxc-y3-4AG" customClass="AngleViewController" customModule="Scolio" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="avv" id="sxc-y3-4AG" customClass="AngleViewController" customModule="Scolio" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="s6z-6c-w88"/>
                         <viewControllerLayoutGuide type="bottom" id="uFU-bV-kYU"/>
@@ -409,9 +409,24 @@
                                     </mask>
                                 </variation>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WbK-Kl-OOG">
+                                <rect key="frame" x="277" y="550" width="46" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="Nod-ig-0Ty"/>
+                                    <constraint firstAttribute="width" constant="46" id="ilh-AS-idV"/>
+                                </constraints>
+                                <state key="normal" title="Done">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="doneTapped:" destination="sxc-y3-4AG" eventType="touchUpInside" id="qpN-5o-vDA"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="uFU-bV-kYU" firstAttribute="top" secondItem="WbK-Kl-OOG" secondAttribute="bottom" constant="20" id="TE1-kp-RDj"/>
+                            <constraint firstAttribute="centerX" secondItem="WbK-Kl-OOG" secondAttribute="centerX" id="ad5-4F-gdC"/>
                             <constraint firstAttribute="centerX" secondItem="uNa-yf-ZcT" secondAttribute="centerX" id="jxC-YT-wQy"/>
                             <constraint firstAttribute="centerY" secondItem="uNa-yf-ZcT" secondAttribute="centerY" constant="0.5" id="znD-NV-oU4"/>
                         </constraints>

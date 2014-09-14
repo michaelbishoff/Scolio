@@ -22,10 +22,14 @@ class AngleViewController: UIViewController {
             self.angleLabel.transform = CGAffineTransformMakeRotation(CGFloat(M_PI/180.0)*moddedAngle);
 
             
-            self.angleLabel.text = "DATA: \(angle)"
+            self.angleLabel.text = "DATA: \(Int(angle))"
         })
     }
 
+    @IBAction func doneTapped(sender: UIButton) {
+        let v = UIStoryboard(name: "Main", bundle: NSBundle.mainBundle()).instantiateViewControllerWithIdentifier("conclusion") as ConclusionViewController
+        self.showViewController(v, sender: self)
+    }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

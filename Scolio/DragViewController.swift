@@ -33,10 +33,13 @@ class DragViewController: UIViewController, UIImagePickerControllerDelegate, UIN
 //        picker.delegate = self
 //        picker.sourceType = UIImagePickerControllerSourceType.Camera
 //        presentViewController(picker, animated: true, completion: nil)
+        
+        let a = UIStoryboard(name: "Main", bundle: NSBundle.mainBundle()).instantiateViewControllerWithIdentifier("avv") as AngleViewController
+        
         let v = UIStoryboard(name: "Main", bundle: NSBundle.mainBundle()).instantiateViewControllerWithIdentifier("conclusion") as ConclusionViewController
         
         //        v.takenImage = image
-        self.showViewController(v, sender: self)
+        self.showViewController(a, sender: self)
         
     }
     func imagePickerController(picker: UIImagePickerController!, didFinishPickingImage image: UIImage!, editingInfo: [NSObject : AnyObject]!) {
