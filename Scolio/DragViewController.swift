@@ -19,7 +19,7 @@ class DragViewController: UIViewController, UIImagePickerControllerDelegate, UIN
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         
     }
 
@@ -124,7 +124,7 @@ class DragNodeView: UIView {
     }
     
     func setup() {
-        self.backgroundColor = .blueColor()
+        self.backgroundColor = UIColor(red: 115/255, green: 173/255, blue: 186/255, alpha: 1)
         self.layer.cornerRadius = frame.height/2
         self.clipsToBounds = true
         

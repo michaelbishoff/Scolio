@@ -15,7 +15,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
-        // Override point for customization after application launch.
+        
+        UINavigationBar.appearance().barTintColor = UIColor(red: 34/255, green: 34/255, blue: 34/255, alpha: 1)
+        UINavigationBar.appearance().titleTextAttributes = [NSForegroundColorAttributeName : UIColor.whiteColor()]
+        
         return true
     }
 
@@ -50,6 +53,10 @@ class Human {
     var hasBackNeckKneePain: Bool?
     var hasBreathingIssues: Bool?
     var hasPainRadiatingFromSinglePoint: Bool?
+    var sexIsFemale: Bool?
+    var age: Int?
+    var topAngle: CGFloat?
+    var bottomAngle: CGFloat?
     
     class var currentHuman : Human {
     struct Static {

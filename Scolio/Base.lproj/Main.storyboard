@@ -153,6 +153,7 @@
                         <subviews>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Your Age" textAlignment="center" adjustsFontSizeToFit="NO" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="i4p-TL-Dnv">
                                 <rect key="frame" x="242" y="85" width="116" height="30"/>
+                                <color key="textColor" red="0.38431372549999998" green="0.61568627450000002" blue="0.67450980390000004" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                 <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                             </textField>
@@ -162,10 +163,12 @@
                                     <segment title="Female"/>
                                     <segment title="Male"/>
                                 </segments>
+                                <color key="tintColor" red="0.3843137254901961" green="0.61568627450980395" blue="0.67450980392156867" alpha="1" colorSpace="calibratedRGB"/>
                             </segmentedControl>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zGA-S9-qEe">
                                 <rect key="frame" x="255" y="221" width="90" height="30"/>
                                 <state key="normal" title="Continue">
+                                    <color key="titleColor" red="0.38431372549999998" green="0.61568627450000002" blue="0.67450980390000004" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -174,6 +177,7 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="tintColor" red="0.10196078431372549" green="0.10196078431372549" blue="0.10196078431372549" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstAttribute="centerX" secondItem="4da-Wk-VPc" secondAttribute="centerX" id="3Mr-7G-M0e"/>
                             <constraint firstItem="zGA-S9-qEe" firstAttribute="top" secondItem="4da-Wk-VPc" secondAttribute="bottom" constant="70" id="A8a-fg-5H2"/>
@@ -207,9 +211,11 @@
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="IRY-u0-d0a">
                                 <rect key="frame" x="0.0" y="64" width="600" height="536"/>
+                                <color key="backgroundColor" red="0.34823495370370372" green="0.34823495370370372" blue="0.34823495370370372" alpha="1" colorSpace="calibratedRGB"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="tintColor" red="0.090196078431372548" green="0.090196078431372548" blue="0.090196078431372548" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="IRY-u0-d0a" firstAttribute="leading" secondItem="IDH-Gd-0yr" secondAttribute="leadingMargin" constant="-16" id="2fO-mg-HKZ"/>
                             <constraint firstAttribute="trailingMargin" secondItem="IRY-u0-d0a" secondAttribute="trailing" constant="-16" id="55a-Uw-nhf"/>
@@ -238,39 +244,30 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5NO-Wm-7Td" customClass="DragNodeView" customModule="Scolio" customModuleProvider="target">
-                                <rect key="frame" x="550" y="471" width="50" height="50"/>
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5NO-Wm-7Td" customClass="DragNodeView" customModule="Scolio" customModuleProvider="target">
+                                <rect key="frame" x="550" y="471" width="35" height="35"/>
                                 <color key="backgroundColor" red="0.26666668059999998" green="0.29803922770000002" blue="0.34901961679999999" alpha="1" colorSpace="deviceRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="50" id="ueu-sU-lLK"/>
-                                    <constraint firstAttribute="height" constant="50" id="w9c-x3-gtN"/>
+                                    <constraint firstAttribute="width" constant="35" id="ueu-sU-lLK"/>
+                                    <constraint firstAttribute="height" constant="35" id="w9c-x3-gtN"/>
                                 </constraints>
                             </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Qgh-XS-JFZ" customClass="DragNodeView" customModule="Scolio" customModuleProvider="target">
-                                <rect key="frame" x="550" y="92" width="50" height="50"/>
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Qgh-XS-JFZ" customClass="DragNodeView" customModule="Scolio" customModuleProvider="target">
+                                <rect key="frame" x="550" y="92" width="35" height="35"/>
                                 <color key="backgroundColor" red="0.26666668059999998" green="0.29803922770000002" blue="0.34901961679999999" alpha="1" colorSpace="deviceRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="pXE-sC-5Vk"/>
-                                    <constraint firstAttribute="width" constant="50" id="vSU-BE-YJe"/>
+                                    <constraint firstAttribute="height" constant="35" id="pXE-sC-5Vk"/>
+                                    <constraint firstAttribute="width" constant="35" id="vSU-BE-YJe"/>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MEj-zz-qJN" customClass="DragNodeView" customModule="Scolio" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="471" width="50" height="50"/>
+                                <rect key="frame" x="0.0" y="471" width="35" height="35"/>
                                 <color key="backgroundColor" red="0.26666668059999998" green="0.29803922770000002" blue="0.34901961679999999" alpha="1" colorSpace="deviceRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="QiT-nS-mY6"/>
-                                    <constraint firstAttribute="width" constant="50" id="m7P-lB-ezQ"/>
+                                    <constraint firstAttribute="height" constant="35" id="QiT-nS-mY6"/>
+                                    <constraint firstAttribute="width" constant="35" id="m7P-lB-ezQ"/>
                                 </constraints>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0oc-w3-SIa">
-                                <rect key="frame" x="401" y="562" width="62" height="30"/>
-                                <state key="normal" title="Continue">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="continueTapped:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="77j-DY-5FO"/>
-                                </connections>
-                            </button>
                             <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9Vz-Ce-xAi" customClass="DragNodeView" customModule="Scolio" customModuleProvider="target">
                                 <rect key="frame" x="143" y="107" width="35" height="35"/>
                                 <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
@@ -279,6 +276,16 @@
                                     <constraint firstAttribute="height" constant="35" id="r97-dw-xsb"/>
                                 </constraints>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0oc-w3-SIa">
+                                <rect key="frame" x="269" y="562" width="62" height="30"/>
+                                <state key="normal" title="Continue">
+                                    <color key="titleColor" red="0.38431372549999998" green="0.61568627450000002" blue="0.67450980390000004" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="continueTapped:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="77j-DY-5FO"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <constraints>
                             <constraint firstItem="Qgh-XS-JFZ" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="72" id="FDK-jG-SR9"/>
@@ -286,6 +293,8 @@
                             <constraint firstItem="MEj-zz-qJN" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="451" id="MKP-jI-XP2"/>
                             <constraint firstAttribute="trailingMargin" secondItem="0oc-w3-SIa" secondAttribute="trailing" constant="121" id="TtG-QG-G1l"/>
                             <constraint firstItem="9Vz-Ce-xAi" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="127" id="h7U-dZ-cJZ"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="0oc-w3-SIa" secondAttribute="bottom" constant="8" id="j35-uB-0mZ"/>
+                            <constraint firstAttribute="centerX" secondItem="0oc-w3-SIa" secondAttribute="centerX" id="lgc-3g-A4M"/>
                             <constraint firstItem="5NO-Wm-7Td" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="451" id="nGd-b5-DRg"/>
                             <constraint firstAttribute="trailingMargin" secondItem="Qgh-XS-JFZ" secondAttribute="trailing" constant="-16" id="omv-8j-HmJ"/>
                             <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="0oc-w3-SIa" secondAttribute="bottom" constant="8" id="x8r-k5-5zE"/>
@@ -295,6 +304,8 @@
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
+                                <exclude reference="x8r-k5-5zE"/>
+                                <exclude reference="TtG-QG-G1l"/>
                                 <exclude reference="y9B-XH-Q0z"/>
                                 <exclude reference="yi5-eR-Cpy"/>
                             </mask>
@@ -400,6 +411,43 @@
             </objects>
             <point key="canvasLocation" x="2821" y="449"/>
         </scene>
+        <!--Conclusion View Controller-->
+        <scene sceneID="R5H-Ei-E82">
+            <objects>
+                <viewController id="Bm3-4Q-CWS" customClass="ConclusionViewController" customModule="Scolio" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="MEM-S7-56g"/>
+                        <viewControllerLayoutGuide type="bottom" id="IkE-Ka-x6r"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="CGF-XO-ys8">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0h6-X9-bM4">
+                                <rect key="frame" x="70" y="129" width="461" height="168"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="168" id="PHf-7l-PHI"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="0h6-X9-bM4" secondAttribute="trailing" constant="53" id="DWq-AX-nc6"/>
+                            <constraint firstItem="0h6-X9-bM4" firstAttribute="leading" secondItem="CGF-XO-ys8" secondAttribute="leadingMargin" constant="54" id="IKV-6y-Oo2"/>
+                            <constraint firstItem="0h6-X9-bM4" firstAttribute="top" secondItem="MEM-S7-56g" secondAttribute="bottom" constant="109" id="YAG-eK-Dhs"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="resultsLabel" destination="0h6-X9-bM4" id="4lc-of-Ikl"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dQ2-7k-pwe" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3484" y="449"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="Mss-DF-wgl">
             <objects>
@@ -409,6 +457,7 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="WAP-FO-n93">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" red="0.38431372549999998" green="0.61568627450000002" blue="0.67450980390000004" alpha="1" colorSpace="calibratedRGB"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>

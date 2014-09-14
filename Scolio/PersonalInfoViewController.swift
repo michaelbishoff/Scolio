@@ -14,7 +14,9 @@ class PersonalInfoViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+//        self.navigationController?.navigationBar.tintColor = UIColor(red: 34/255, green: 34/255, blue: 34/255, alpha: 1)
         ageTextField.becomeFirstResponder()
+        self.view.backgroundColor = UIColor(red: 239/255, green: 237/255, blue: 239/255, alpha: 1)
         // Do any additional setup after loading the view.
     }
 
@@ -24,6 +26,8 @@ class PersonalInfoViewController: UIViewController {
     }
     
     @IBAction func continueTapped(sender: UIButton) {
+        Human.currentHuman.sexIsFemale = biologicalSexSegmentedControl.selectedSegmentIndex == 0
+        Human.currentHuman.age = ageTextField.text.toInt()
         let sb = UIStoryboard(name: "Main", bundle: NSBundle.mainBundle())
         let qvc = sb.instantiateViewControllerWithIdentifier("qvc") as QuestionsViewController
         self.showViewController(qvc, sender: self)

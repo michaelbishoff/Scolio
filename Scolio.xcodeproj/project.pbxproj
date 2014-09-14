@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		2A32DB57D69E46EB8CE4043D /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 97EF1AC67D814C7B90FA9CD7 /* libPods.a */; };
+		75121B3119C5CA5D004C79D8 /* ConclusionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75121B3019C5CA5D004C79D8 /* ConclusionViewController.swift */; };
 		751D5FEA19C3F03E0010ECA1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 751D5FE919C3F03E0010ECA1 /* AppDelegate.swift */; };
 		751D5FEF19C3F03E0010ECA1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 751D5FED19C3F03E0010ECA1 /* Main.storyboard */; };
 		751D5FF119C3F03E0010ECA1 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 751D5FF019C3F03E0010ECA1 /* Images.xcassets */; };
@@ -32,6 +33,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		75121B3019C5CA5D004C79D8 /* ConclusionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConclusionViewController.swift; sourceTree = "<group>"; };
 		751D5FE419C3F03E0010ECA1 /* Scolio.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Scolio.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		751D5FE819C3F03E0010ECA1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		751D5FE919C3F03E0010ECA1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -109,6 +111,7 @@
 				756B85E819C4B3F60008BAA4 /* PersonalInfoViewController.swift */,
 				756B85EA19C4BA990008BAA4 /* QuestionsViewController.swift */,
 				757327DA19C56E8D008FC256 /* DrawSpineViewController.swift */,
+				75121B3019C5CA5D004C79D8 /* ConclusionViewController.swift */,
 				751D5FED19C3F03E0010ECA1 /* Main.storyboard */,
 				751D5FF019C3F03E0010ECA1 /* Images.xcassets */,
 				751D5FF219C3F03E0010ECA1 /* LaunchScreen.xib */,
@@ -283,6 +286,7 @@
 				756B85EB19C4BA990008BAA4 /* QuestionsViewController.swift in Sources */,
 				751D600A19C3FE9F0010ECA1 /* DragViewController.swift in Sources */,
 				751D5FEA19C3F03E0010ECA1 /* AppDelegate.swift in Sources */,
+				75121B3119C5CA5D004C79D8 /* ConclusionViewController.swift in Sources */,
 				75EDE53019C502C700AB2082 /* DisplayImageViewController.swift in Sources */,
 				756B85E719C49F640008BAA4 /* AngleViewController.swift in Sources */,
 			);
