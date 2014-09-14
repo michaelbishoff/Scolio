@@ -8,7 +8,7 @@
 
 import UIKit
 
-class DragViewController: UIViewController {
+class DragViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate  {
     
     
     @IBOutlet var topLeft: DragNodeView!
@@ -28,7 +28,21 @@ class DragViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    
+    @IBAction func continueTapped(sender: UIButton) {
+        let picker = UIImagePickerController()
+        picker.delegate = self
+        picker.sourceType = UIImagePickerControllerSourceType.Camera
+        presentViewController(picker, animated: true, completion: nil)
+        
+    }
+    func imagePickerController(picker: UIImagePickerController!, didFinishPickingImage image: UIImage!, editingInfo: [NSObject : AnyObject]!) {
+        picker.dismissViewControllerAnimated(true, completion: nil)
+        
+        let v = UIStoryboard(name: "Main", bundle: NSBundle.mainBundle()).instantiateViewControllerWithIdentifier("dsp") as DrawSpineViewController
+        v.takenImage = image
+        self.showViewController(v, sender: self)
+    }
+
 
 }
 

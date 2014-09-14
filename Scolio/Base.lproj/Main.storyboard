@@ -246,14 +246,6 @@
                                     <constraint firstAttribute="height" constant="50" id="w9c-x3-gtN"/>
                                 </constraints>
                             </view>
-                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9Vz-Ce-xAi" customClass="DragNodeView" customModule="Scolio" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="92" width="50" height="50"/>
-                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="50" id="TbL-rv-0Tq"/>
-                                    <constraint firstAttribute="height" constant="50" id="Yp7-so-Nqp"/>
-                                </constraints>
-                            </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Qgh-XS-JFZ" customClass="DragNodeView" customModule="Scolio" customModuleProvider="target">
                                 <rect key="frame" x="550" y="92" width="50" height="50"/>
                                 <color key="backgroundColor" red="0.26666668059999998" green="0.29803922770000002" blue="0.34901961679999999" alpha="1" colorSpace="deviceRGB"/>
@@ -271,20 +263,29 @@
                                 </constraints>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0oc-w3-SIa">
-                                <rect key="frame" x="417" y="562" width="46" height="30"/>
-                                <state key="normal" title="Button">
+                                <rect key="frame" x="401" y="562" width="62" height="30"/>
+                                <state key="normal" title="Continue">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="sxc-y3-4AG" kind="show" id="8fq-fb-UpW"/>
+                                    <action selector="continueTapped:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="77j-DY-5FO"/>
                                 </connections>
                             </button>
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9Vz-Ce-xAi" customClass="DragNodeView" customModule="Scolio" customModuleProvider="target">
+                                <rect key="frame" x="143" y="107" width="35" height="35"/>
+                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="35" id="Smy-Ow-bo0"/>
+                                    <constraint firstAttribute="height" constant="35" id="r97-dw-xsb"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <constraints>
                             <constraint firstItem="Qgh-XS-JFZ" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="72" id="FDK-jG-SR9"/>
                             <constraint firstItem="9Vz-Ce-xAi" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="72" id="Huw-YK-0wm"/>
                             <constraint firstItem="MEj-zz-qJN" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="451" id="MKP-jI-XP2"/>
                             <constraint firstAttribute="trailingMargin" secondItem="0oc-w3-SIa" secondAttribute="trailing" constant="121" id="TtG-QG-G1l"/>
+                            <constraint firstItem="9Vz-Ce-xAi" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="127" id="h7U-dZ-cJZ"/>
                             <constraint firstItem="5NO-Wm-7Td" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="451" id="nGd-b5-DRg"/>
                             <constraint firstAttribute="trailingMargin" secondItem="Qgh-XS-JFZ" secondAttribute="trailing" constant="-16" id="omv-8j-HmJ"/>
                             <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="0oc-w3-SIa" secondAttribute="bottom" constant="8" id="x8r-k5-5zE"/>
@@ -315,6 +316,46 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1402" y="449"/>
+        </scene>
+        <!--Draw Spine View Controller-->
+        <scene sceneID="EWg-Hz-8yj">
+            <objects>
+                <viewController storyboardIdentifier="dsp" id="Wrv-KI-78j" customClass="DrawSpineViewController" customModule="Scolio" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="yBX-fr-OzV"/>
+                        <viewControllerLayoutGuide type="bottom" id="tDA-jE-JSY"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="q9S-NP-2tR">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Ypq-hQ-viM">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="qj4-zS-SF8">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="Ypq-hQ-viM" secondAttribute="trailing" constant="-16" id="1nl-in-vW0"/>
+                            <constraint firstItem="Ypq-hQ-viM" firstAttribute="leading" secondItem="q9S-NP-2tR" secondAttribute="leadingMargin" constant="-16" id="5T0-dE-9fQ"/>
+                            <constraint firstItem="tDA-jE-JSY" firstAttribute="top" secondItem="qj4-zS-SF8" secondAttribute="bottom" id="M6i-Ec-AiX"/>
+                            <constraint firstItem="qj4-zS-SF8" firstAttribute="top" secondItem="q9S-NP-2tR" secondAttribute="topMargin" id="cqe-cI-S3V"/>
+                            <constraint firstItem="Ypq-hQ-viM" firstAttribute="top" secondItem="q9S-NP-2tR" secondAttribute="topMargin" id="iBk-TC-rXW"/>
+                            <constraint firstItem="qj4-zS-SF8" firstAttribute="leading" secondItem="q9S-NP-2tR" secondAttribute="leadingMargin" constant="-16" id="jXs-eo-Dqm"/>
+                            <constraint firstItem="tDA-jE-JSY" firstAttribute="top" secondItem="Ypq-hQ-viM" secondAttribute="bottom" id="rqr-ef-1kL"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="qj4-zS-SF8" secondAttribute="trailing" constant="-16" id="ugO-jF-e3h"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="mainImageView" destination="Ypq-hQ-viM" id="QaX-EG-X0u"/>
+                        <outlet property="tempImageView" destination="qj4-zS-SF8" id="cpW-Vo-TKe"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ESA-LE-5yu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2117" y="449"/>
         </scene>
         <!--Angle View Controller-->
         <scene sceneID="ijZ-km-EGP">
@@ -357,7 +398,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Mbe-26-oD5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2166" y="454"/>
+            <point key="canvasLocation" x="2821" y="449"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Mss-DF-wgl">
