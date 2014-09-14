@@ -257,38 +257,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5NO-Wm-7Td" customClass="DragNodeView" customModule="Scolio" customModuleProvider="target">
-                                <rect key="frame" x="550" y="471" width="35" height="35"/>
-                                <color key="backgroundColor" red="0.26666668059999998" green="0.29803922770000002" blue="0.34901961679999999" alpha="1" colorSpace="deviceRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="35" id="ueu-sU-lLK"/>
-                                    <constraint firstAttribute="height" constant="35" id="w9c-x3-gtN"/>
-                                </constraints>
-                            </view>
-                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Qgh-XS-JFZ" customClass="DragNodeView" customModule="Scolio" customModuleProvider="target">
-                                <rect key="frame" x="550" y="92" width="35" height="35"/>
-                                <color key="backgroundColor" red="0.26666668059999998" green="0.29803922770000002" blue="0.34901961679999999" alpha="1" colorSpace="deviceRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="35" id="pXE-sC-5Vk"/>
-                                    <constraint firstAttribute="width" constant="35" id="vSU-BE-YJe"/>
-                                </constraints>
-                            </view>
-                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MEj-zz-qJN" customClass="DragNodeView" customModule="Scolio" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="471" width="35" height="35"/>
-                                <color key="backgroundColor" red="0.26666668059999998" green="0.29803922770000002" blue="0.34901961679999999" alpha="1" colorSpace="deviceRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="35" id="QiT-nS-mY6"/>
-                                    <constraint firstAttribute="width" constant="35" id="m7P-lB-ezQ"/>
-                                </constraints>
-                            </view>
-                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9Vz-Ce-xAi" customClass="DragNodeView" customModule="Scolio" customModuleProvider="target">
-                                <rect key="frame" x="143" y="107" width="35" height="35"/>
-                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="35" id="Smy-Ow-bo0"/>
-                                    <constraint firstAttribute="height" constant="35" id="r97-dw-xsb"/>
-                                </constraints>
-                            </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0oc-w3-SIa">
                                 <rect key="frame" x="269" y="562" width="62" height="30"/>
                                 <state key="normal" title="Continue">
@@ -299,30 +267,51 @@
                                     <action selector="continueTapped:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="77j-DY-5FO"/>
                                 </connections>
                             </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5NO-Wm-7Td" customClass="DragNodeView" customModule="Scolio" customModuleProvider="target">
+                                <rect key="frame" x="457" y="433" width="35" height="35"/>
+                                <color key="backgroundColor" red="0.26666668059999998" green="0.29803922770000002" blue="0.34901961679999999" alpha="1" colorSpace="deviceRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="35" id="ueu-sU-lLK"/>
+                                    <constraint firstAttribute="height" constant="35" id="w9c-x3-gtN"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Qgh-XS-JFZ" customClass="DragNodeView" customModule="Scolio" customModuleProvider="target">
+                                <rect key="frame" x="457" y="132" width="35" height="35"/>
+                                <color key="backgroundColor" red="0.26666668059999998" green="0.29803922770000002" blue="0.34901961679999999" alpha="1" colorSpace="deviceRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="pXE-sC-5Vk"/>
+                                    <constraint firstAttribute="width" constant="35" id="vSU-BE-YJe"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MEj-zz-qJN" customClass="DragNodeView" customModule="Scolio" customModuleProvider="target">
+                                <rect key="frame" x="108" y="433" width="35" height="35"/>
+                                <color key="backgroundColor" red="0.26666668059999998" green="0.29803922770000002" blue="0.34901961679999999" alpha="1" colorSpace="deviceRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="QiT-nS-mY6"/>
+                                    <constraint firstAttribute="width" constant="35" id="m7P-lB-ezQ"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9Vz-Ce-xAi" customClass="DragNodeView" customModule="Scolio" customModuleProvider="target">
+                                <rect key="frame" x="108" y="132" width="35" height="35"/>
+                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="35" id="Smy-Ow-bo0"/>
+                                    <constraint firstAttribute="height" constant="35" id="r97-dw-xsb"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <constraints>
-                            <constraint firstItem="Qgh-XS-JFZ" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="72" id="FDK-jG-SR9"/>
-                            <constraint firstItem="9Vz-Ce-xAi" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="72" id="Huw-YK-0wm"/>
-                            <constraint firstItem="MEj-zz-qJN" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="451" id="MKP-jI-XP2"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="0oc-w3-SIa" secondAttribute="trailing" constant="121" id="TtG-QG-G1l"/>
-                            <constraint firstItem="9Vz-Ce-xAi" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="127" id="h7U-dZ-cJZ"/>
+                            <constraint firstItem="9Vz-Ce-xAi" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="92" id="6eD-Fd-tOh"/>
+                            <constraint firstItem="9Vz-Ce-xAi" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="112" id="C4R-dB-xxG"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Qgh-XS-JFZ" secondAttribute="trailing" constant="92" id="OcV-Gq-TnQ"/>
+                            <constraint firstItem="MEj-zz-qJN" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="92" id="gkM-wT-ZYk"/>
                             <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="0oc-w3-SIa" secondAttribute="bottom" constant="8" id="j35-uB-0mZ"/>
                             <constraint firstAttribute="centerX" secondItem="0oc-w3-SIa" secondAttribute="centerX" id="lgc-3g-A4M"/>
-                            <constraint firstItem="5NO-Wm-7Td" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="451" id="nGd-b5-DRg"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="Qgh-XS-JFZ" secondAttribute="trailing" constant="-16" id="omv-8j-HmJ"/>
-                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="0oc-w3-SIa" secondAttribute="bottom" constant="8" id="x8r-k5-5zE"/>
-                            <constraint firstItem="0oc-w3-SIa" firstAttribute="trailing" secondItem="kh9-bI-dsS" secondAttribute="trailingMargin" id="y9B-XH-Q0z"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="5NO-Wm-7Td" secondAttribute="trailing" constant="-16" id="yKz-c2-26J"/>
-                            <constraint firstItem="5NO-Wm-7Td" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="497" id="yi5-eR-Cpy"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="MEj-zz-qJN" secondAttribute="bottom" constant="132" id="n2I-Fr-UZ5"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="5NO-Wm-7Td" secondAttribute="trailing" constant="92" id="o6g-oH-VZy"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="5NO-Wm-7Td" secondAttribute="bottom" constant="132" id="ph9-Pf-NgT"/>
+                            <constraint firstItem="Qgh-XS-JFZ" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="112" id="z4T-9M-xVd"/>
                         </constraints>
-                        <variation key="default">
-                            <mask key="constraints">
-                                <exclude reference="x8r-k5-5zE"/>
-                                <exclude reference="TtG-QG-G1l"/>
-                                <exclude reference="y9B-XH-Q0z"/>
-                                <exclude reference="yi5-eR-Cpy"/>
-                            </mask>
-                        </variation>
                         <connections>
                             <outlet property="bottomLeft" destination="MEj-zz-qJN" id="8OG-wS-nBM"/>
                             <outlet property="bottomRight" destination="5NO-Wm-7Td" id="DQb-3w-Tid"/>
